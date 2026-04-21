@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450">
+  <defs>
+    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f4fc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d1e9f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="serviceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B7A4E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2A9D8F;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Ocean Background -->
+  <rect width="600" height="450" fill="url(#oceanGrad)"/>
+  
+  <!-- Water texture lines -->
+  <g stroke="#c5dff0" stroke-width="0.5" opacity="0.5">
+    <path d="M0,50 Q150,40 300,55 T600,45"/>
+    <path d="M0,100 Q150,110 300,95 T600,105"/>
+    <path d="M0,150 Q150,140 300,155 T600,145"/>
+    <path d="M0,350 Q150,360 300,345 T600,355"/>
+    <path d="M0,400 Q150,390 300,405 T600,395"/>
+  </g>
+  
+  <!-- New Brunswick (full province outline) -->
+  <path d="M50,80 L120,60 L180,70 L220,50 L260,70 L280,120 L300,150 L290,200 L300,250 L280,300 L250,340 L200,360 L150,350 L100,320 L70,280 L50,220 L40,160 Z" 
+        fill="#d4d4d4" stroke="#999" stroke-width="1.5" filter="url(#shadow)"/>
+  
+  <!-- South New Brunswick (SERVICE AREA - highlighted) -->
+  <path d="M150,350 L200,360 L250,340 L280,300 L300,250 L340,280 L360,320 L340,360 L280,380 L220,390 L160,380 L130,360 Z" 
+        fill="url(#serviceGrad)" stroke="#145c3a" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Prince Edward Island (SERVICE AREA - highlighted) -->
+  <path d="M320,120 Q350,100 400,95 Q450,90 500,100 Q530,110 540,130 Q535,150 500,155 Q450,165 400,160 Q360,155 340,145 Q320,135 320,120 Z" 
+        fill="url(#serviceGrad)" stroke="#145c3a" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Nova Scotia (full province outline) -->
+  <path d="M340,280 L380,260 L420,250 L480,260 L540,280 L580,320 L560,370 L500,400 L440,410 L380,400 L340,360 Z" 
+        fill="#d4d4d4" stroke="#999" stroke-width="1.5" filter="url(#shadow)"/>
+  
+  <!-- Northeast Nova Scotia (SERVICE AREA - highlighted) -->
+  <path d="M340,280 L380,260 L420,250 L460,255 L480,280 L470,320 L440,350 L400,360 L360,350 L340,320 Z" 
+        fill="url(#serviceGrad)" stroke="#145c3a" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- City markers -->
+  <!-- Moncton -->
+  <circle cx="280" cy="320" r="8" fill="#fff" stroke="#1B7A4E" stroke-width="3"/>
+  <circle cx="280" cy="320" r="3" fill="#1B7A4E"/>
+  
+  <!-- Charlottetown -->
+  <circle cx="430" cy="130" r="8" fill="#fff" stroke="#1B7A4E" stroke-width="3"/>
+  <circle cx="430" cy="130" r="3" fill="#1B7A4E"/>
+  
+  <!-- Amherst area (NE NS) -->
+  <circle cx="380" cy="300" r="6" fill="#fff" stroke="#1B7A4E" stroke-width="2"/>
+  <circle cx="380" cy="300" r="2" fill="#1B7A4E"/>
+  
+  <!-- Summerside -->
+  <circle cx="370" cy="125" r="6" fill="#fff" stroke="#1B7A4E" stroke-width="2"/>
+  <circle cx="370" cy="125" r="2" fill="#1B7A4E"/>
+  
+  <!-- City Labels -->
+  <g font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#333">
+    <text x="280" y="345" text-anchor="middle">Moncton</text>
+    <text x="430" y="155" text-anchor="middle">Charlottetown</text>
+    <text x="380" y="285" text-anchor="middle" font-size="10">Amherst</text>
+    <text x="370" y="110" text-anchor="middle" font-size="10">Summerside</text>
+  </g>
+  
+  <!-- Province Labels (for non-service areas) -->
+  <g font-family="Inter, Arial, sans-serif" font-size="11" fill="#666" font-style="italic">
+    <text x="150" y="200" text-anchor="middle">New</text>
+    <text x="150" y="215" text-anchor="middle">Brunswick</text>
+    <text x="520" y="350" text-anchor="middle">Nova</text>
+    <text x="520" y="365" text-anchor="middle">Scotia</text>
+  </g>
+  
+  <!-- Region Labels for Service Areas -->
+  <g font-family="Inter, Arial, sans-serif" font-size="10" fill="#fff" font-weight="500">
+    <text x="240" y="370" text-anchor="middle">South NB</text>
+    <text x="430" y="135" text-anchor="middle" font-size="9" dy="25">PEI</text>
+    <text x="400" y="320" text-anchor="middle">NE Nova Scotia</text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(20, 390)">
+    <rect x="0" y="0" width="180" height="50" fill="white" rx="5" opacity="0.9" filter="url(#shadow)"/>
+    <rect x="10" y="12" width="20" height="12" fill="url(#serviceGrad)" rx="2"/>
+    <text x="35" y="22" font-family="Inter, Arial, sans-serif" font-size="11" fill="#333">Service Area</text>
+    <rect x="10" y="32" width="20" height="12" fill="#d4d4d4" stroke="#999" stroke-width="0.5" rx="2"/>
+    <text x="35" y="42" font-family="Inter, Arial, sans-serif" font-size="11" fill="#333">Outside Service Area</text>
+  </g>
+  
+  <!-- Compass -->
+  <g transform="translate(555, 40)">
+    <circle cx="0" cy="0" r="20" fill="white" opacity="0.9" filter="url(#shadow)"/>
+    <polygon points="0,-15 4,-5 0,-8 -4,-5" fill="#1B7A4E"/>
+    <polygon points="0,15 4,5 0,8 -4,5" fill="#999"/>
+    <text x="0" y="-6" font-family="Inter, Arial, sans-serif" font-size="8" fill="#1B7A4E" text-anchor="middle" font-weight="bold">N</text>
+  </g>
+</svg>

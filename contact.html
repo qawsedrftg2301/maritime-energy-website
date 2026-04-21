@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Maritime Energy Audit & Heat Pump Solutions for energy audits, heat pump quotes, and consultation. Serving South New Brunswick, PEI, and Northeast Nova Scotia.">
+    <meta name="keywords" content="Contact Energy Auditor, Heat Pump Quote, Energy Efficiency Consultation, South New Brunswick, PEI, Northeast Nova Scotia, Moncton, Charlottetown">
+    <title>Contact Us | Maritime Energy Audit & Heat Pump Solutions</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Maritime Energy Audit & Heat Pump Solutions" class="logo-img">
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary btn-nav">Get a Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero contact-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="section-tag">Contact Us</span>
+                <h1>Let's Talk Energy Efficiency</h1>
+                <p>Ready to start saving? Have questions? We're here to help. Reach out and a member of our team will get back to you within 24 hours.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <div class="form-header">
+                        <h2>Request a Quote</h2>
+                        <p>Fill out the form below and we'll get back to you with a personalized quote.</p>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="address">Street Address</label>
+                                <input type="text" id="address" name="address" placeholder="123 Main Street">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="province">Province *</label>
+                                <select id="province" name="province" required>
+                                    <option value="">Select Province</option>
+                                    <option value="AB">Alberta</option>
+                                    <option value="BC">British Columbia</option>
+                                    <option value="MB">Manitoba</option>
+                                    <option value="NB">New Brunswick</option>
+                                    <option value="NL">Newfoundland and Labrador</option>
+                                    <option value="NS">Nova Scotia</option>
+                                    <option value="NT">Northwest Territories</option>
+                                    <option value="NU">Nunavut</option>
+                                    <option value="ON">Ontario</option>
+                                    <option value="PE">Prince Edward Island</option>
+                                    <option value="QC">Quebec</option>
+                                    <option value="SK">Saskatchewan</option>
+                                    <option value="YT">Yukon</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="postalCode">Postal Code</label>
+                                <input type="text" id="postalCode" name="postalCode" placeholder="A1A 1A1">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="audit">Home Energy Audit</option>
+                                <option value="heatpump">Heat Pump Quote</option>
+                                <option value="consulting">Heat Pump Consulting</option>
+                                <option value="installation">Heat Pump Installation</option>
+                                <option value="thermography">Thermography Inspection</option>
+                                <option value="maintenance">Preventative Maintenance</option>
+                                <option value="other">Other / General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="homeType">Home Type</label>
+                            <select id="homeType" name="homeType">
+                                <option value="">Select Home Type</option>
+                                <option value="detached">Detached House</option>
+                                <option value="semi">Semi-Detached</option>
+                                <option value="townhouse">Townhouse</option>
+                                <option value="condo">Condo</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="homeSize">Approximate Home Size (sq ft)</label>
+                                <input type="number" id="homeSize" name="homeSize" placeholder="e.g., 2000">
+                            </div>
+                            <div class="form-group">
+                                <label for="heatingType">Current Heating System</label>
+                                <select id="heatingType" name="heatingType">
+                                    <option value="">Select Heating Type</option>
+                                    <option value="gas">Natural Gas Furnace</option>
+                                    <option value="oil">Oil Furnace</option>
+                                    <option value="electric">Electric Baseboard</option>
+                                    <option value="propane">Propane</option>
+                                    <option value="heatpump">Heat Pump (existing)</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell Us More About Your Project</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Describe your goals, any specific concerns, or questions you have..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="hearAbout">How Did You Hear About Us?</label>
+                            <select id="hearAbout" name="hearAbout">
+                                <option value="">Select an Option</option>
+                                <option value="google">Google Search</option>
+                                <option value="referral">Friend/Family Referral</option>
+                                <option value="social">Social Media</option>
+                                <option value="ad">Online Advertisement</option>
+                                <option value="event">Event/Trade Show</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span>I'd like to receive energy-saving tips and updates (optional)</span>
+                            </label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" value="yes" required>
+                                <span>I agree to the <a href="#">Privacy Policy</a> and consent to being contacted *</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            <i class="fas fa-paper-plane"></i>
+                            Submit Request
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess" style="display: none;">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Thank You!</h3>
+                        <p>Your request has been submitted successfully. A member of our team will contact you within 24 hours.</p>
+                        <a href="index.html" class="btn btn-primary">Return to Homepage</a>
+                    </div>
+                </div>
+
+                <!-- Contact Info Sidebar -->
+                <div class="contact-sidebar">
+                    <div class="contact-info-card">
+                        <h3>Get in Touch</h3>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-details">
+                                    <strong>Phone</strong>
+                                    <a href="tel:+15063776170">506 377-6170</a>
+                                    <span>Mon-Fri: 8am - 6pm EST</span>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-details">
+                                    <strong>Email</strong>
+                                    <a href="mailto:info@maritimeenergy.ca">info@maritimeenergy.ca</a>
+                                    <span>We respond within 24 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-links-card">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li>
+                                <a href="services.html">
+                                    <i class="fas fa-arrow-right"></i>
+                                    View Our Services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="how-it-works.html">
+                                    <i class="fas fa-arrow-right"></i>
+                                    How It Works
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#calculator">
+                                    <i class="fas fa-arrow-right"></i>
+                                    Savings Calculator
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What areas do you serve?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We serve homeowners in South New Brunswick, Prince Edward Island, and Northeast Nova Scotia. This includes the Moncton area, Charlottetown, and surrounding communities.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How quickly can I get an appointment?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Typically, we can schedule an energy audit within 1-2 weeks, depending on your location and season. During peak times (spring and fall), appointments may book up faster, so we recommend booking early.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer free quotes?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer free initial consultations by phone to discuss your needs and provide a preliminary estimate. For detailed heat pump quotes, we recommend an energy audit first to ensure accurate sizing and recommendations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept all major credit cards, debit, e-transfer, and cheque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="Maritime Energy Audit & Heat Pump Solutions" class="logo-img">
+                    </a>
+                    <p>Helping homeowners in South New Brunswick, PEI, and Northeast Nova Scotia save energy, reduce costs, and live more comfortably.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#audits">Energy Audits</a></li>
+                        <li><a href="services.html#consulting">Heat Pump Consulting</a></li>
+                        <li><a href="services.html#installation">Installation Services</a></li>
+                        <li><a href="services.html#thermography">Thermography Inspections</a></li>
+                        <li><a href="services.html#maintenance">Preventative Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 506 377-6170</li>
+                        <li><i class="fas fa-envelope"></i> info@maritimeenergy.ca</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Serving South NB, PEI & NE Nova Scotia</li>
+                    </ul>
+                    <div class="certifications">
+                        <span class="cert-badge">NRCan Registered</span>
+                        <span class="cert-badge">HRAI Certified</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Maritime Energy Audit & Heat Pump Solutions. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Pre-fill service selection from URL parameter
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const service = urlParams.get('service');
+            if (service) {
+                const serviceSelect = document.getElementById('service');
+                if (serviceSelect) {
+                    serviceSelect.value = service;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
