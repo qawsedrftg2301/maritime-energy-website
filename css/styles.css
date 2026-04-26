@@ -955,24 +955,9 @@ p {
 
 /* ===== Service Area Section ===== */
 .service-area-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-3xl);
-    align-items: center;
-}
-
-.service-area-map-container {
-    background: var(--white);
-    border-radius: var(--radius-xl);
-    padding: var(--spacing-lg);
-    box-shadow: var(--shadow-lg);
-    overflow: hidden;
-}
-
-.service-area-map-img {
-    width: 100%;
-    height: auto;
-    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .service-area-details h3 {
@@ -1030,16 +1015,7 @@ p {
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    .service-area-content {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-xl);
-    }
-    
-    .service-area-map-container {
-        order: -1;
-    }
-}
+
 
 /* ===== Footer ===== */
 .footer {
@@ -1462,27 +1438,13 @@ p {
 
 .process-step {
     display: grid;
-    grid-template-columns: 60px 1fr 1fr;
+    grid-template-columns: 60px 1fr;
     gap: var(--spacing-2xl);
     margin-bottom: var(--spacing-3xl);
     position: relative;
 }
 
-.process-step.reverse {
-    grid-template-columns: 1fr 1fr 60px;
-}
 
-.process-step.reverse .step-number {
-    order: 3;
-}
-
-.process-step.reverse .step-content {
-    order: 2;
-}
-
-.process-step.reverse .step-image {
-    order: 1;
-}
 
 .step-number {
     width: 60px;
@@ -2080,10 +2042,8 @@ p {
 
 /* ===== About Page ===== */
 .mission-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: var(--spacing-3xl);
-    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .mission-content .lead {

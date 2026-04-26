@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid meet">
+  <title id="title">Online booking calendar illustration</title>
+  <desc id="desc">Stylized calendar and person icon representing booking an energy audit online.</desc>
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#1B7A4E"/>
+      <stop offset="100%" stop-color="#1E6091"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background card -->
+  <rect x="80" y="80" width="760" height="560" rx="28" fill="#FFFFFF" stroke="#E8EEF0" stroke-width="2" filter="url(#shadow)"/>
+
+  <!-- Calendar header -->
+  <rect x="80" y="80" width="760" height="120" rx="24" fill="url(#g1)" />
+  <g transform="translate(120, 110)" fill="#fff" opacity="0.95">
+    <rect x="0" y="0" width="28" height="28" rx="6" fill="#ffffff" opacity="0.08"/>
+    <rect x="44" y="0" width="28" height="28" rx="6" fill="#ffffff" opacity="0.08"/>
+    <rect x="88" y="0" width="28" height="28" rx="6" fill="#ffffff" opacity="0.08"/>
+  </g>
+  <text x="120" y="160" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Book an Energy Audit</text>
+
+  <!-- Calendar grid -->
+  <g transform="translate(120,220)">
+    <!-- rows x cols -->
+    <g fill="#F7FBFA">
+      <rect x="0" y="0" width="640" height="80" rx="10" />
+    </g>
+    <g transform="translate(0,0)" stroke="#E6EEF0" stroke-width="2">
+      <!-- draw 4 columns x 4 rows grid squares for stylized calendar -->
+      <rect x="0" y="0" width="150" height="100" rx="10" fill="#FFF"/>
+      <rect x="170" y="0" width="150" height="100" rx="10" fill="#FFF"/>
+      <rect x="340" y="0" width="150" height="100" rx="10" fill="#FFF"/>
+      <rect x="510" y="0" width="150" height="100" rx="10" fill="#FFF"/>
+
+      <rect x="0" y="120" width="150" height="100" rx="10" fill="#FFF"/>
+      <rect x="170" y="120" width="150" height="100" rx="10" fill="#FFF"/>
+      <rect x="340" y="120" width="150" height="100" rx="10" fill="#FFF"/>
+      <rect x="510" y="120" width="150" height="100" rx="10" fill="#FFF"/>
+
+      <rect x="0" y="240" width="150" height="100" rx="10" fill="#FFF"/>
+      <rect x="170" y="240" width="150" height="100" rx="10" fill="#FFF"/>
+      <rect x="340" y="240" width="150" height="100" rx="10" fill="#FFF"/>
+      <rect x="510" y="240" width="150" height="100" rx="10" fill="#FFF"/>
+
+      <rect x="0" y="360" width="150" height="100" rx="10" fill="#FFF"/>
+      <rect x="170" y="360" width="150" height="100" rx="10" fill="#FFF"/>
+      <rect x="340" y="360" width="150" height="100" rx="10" fill="#FFF"/>
+      <rect x="510" y="360" width="150" height="100" rx="10" fill="#FFF"/>
+    </g>
+
+    <!-- highlight a selected date -->
+    <g transform="translate(340,120)">
+      <rect x="0" y="0" width="150" height="100" rx="10" fill="#1B7A4E" opacity="0.10"/>
+      <rect x="16" y="12" width="118" height="76" rx="8" fill="#fff" />
+      <text x="24" y="56" fill="#1B7A4E" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="700">15</text>
+    </g>
+
+  </g>
+
+  <!-- Person and device illustration (right side) -->
+  <g transform="translate(880,220)">
+    <!-- device outline -->
+    <rect x="-220" y="0" width="320" height="420" rx="18" fill="#fff" stroke="#E8EEF0" stroke-width="2"/>
+    <rect x="-200" y="20" width="280" height="320" rx="12" fill="#F6FAF9"/>
+
+    <!-- person avatar -->
+    <circle cx="-60" cy="140" r="48" fill="#1B7A4E"/>
+    <circle cx="-60" cy="140" r="36" fill="#fff" opacity="0.06"/>
+    <g transform="translate(-60,210)">
+      <rect x="-44" y="0" width="88" height="92" rx="22" fill="#1B7A4E"/>
+      <rect x="-32" y="10" width="64" height="72" rx="14" fill="#fff" opacity="0.06"/>
+    </g>
+
+    <!-- small calendar inside device -->
+    <g transform="translate(-150,30)">
+      <rect x="0" y="0" width="120" height="96" rx="8" fill="#fff" stroke="#E6EEF0"/>
+      <rect x="8" y="8" width="16" height="16" rx="4" fill="#1B7A4E"/>
+      <rect x="32" y="8" width="16" height="16" rx="4" fill="#1B7A4E"/>
+      <text x="18" y="64" fill="#1B7A4E" font-weight="700" font-size="28">15</text>
+    </g>
+
+    <!-- check badge -->
+    <g transform="translate(-30,360)">
+      <circle cx="0" cy="0" r="36" fill="url(#g1)"/>
+      <path d="M-12 0 L-4 8 L12 -12" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- subtle footer label -->
+  <text x="100" y="680" fill="#9AAEB3" font-family="Inter, Arial, sans-serif" font-size="14">Schedule online — quick & simple</text>
+
+</svg>
