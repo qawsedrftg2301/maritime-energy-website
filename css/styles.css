@@ -2301,6 +2301,134 @@ p {
     color: var(--gray-600);
 }
 
+/* ===== Privacy Policy Page ===== */
+.privacy-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.last-updated {
+    background: var(--primary-green-light);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-2xl);
+    text-align: center;
+}
+
+.last-updated p {
+    margin: 0;
+    color: var(--primary-green-dark);
+}
+
+.policy-section {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.policy-section h2 {
+    color: var(--primary-green-dark);
+    border-bottom: 2px solid var(--primary-green-light);
+    padding-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.policy-section h3 {
+    color: var(--gray-800);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.policy-list {
+    margin: var(--spacing-lg) 0;
+}
+
+.policy-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    color: var(--gray-700);
+}
+
+.policy-list li i {
+    color: var(--primary-green);
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.rights-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+}
+
+.right-item {
+    background: var(--gray-50);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--primary-green);
+}
+
+.right-item h4 {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-green-dark);
+}
+
+.right-item h4 i {
+    color: var(--primary-green);
+}
+
+.right-item p {
+    margin: 0;
+    color: var(--gray-600);
+    font-size: 0.9375rem;
+}
+
+.contact-privacy {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+}
+
+.contact-method {
+    background: var(--white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+}
+
+.contact-method h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-green-dark);
+}
+
+.contact-method h4 i {
+    color: var(--primary-green);
+}
+
+.contact-method p {
+    margin: 0;
+    color: var(--gray-600);
+}
+
+.contact-method a {
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+.contact-method a:hover {
+    color: var(--primary-green-dark);
+}
+
 /* ===== Contact Page ===== */
 .contact-grid {
     display: flex;
@@ -2662,6 +2790,14 @@ p {
     .comparison-arrow {
         transform: rotate(90deg);
         justify-content: center;
+    }
+    
+    .rights-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-privacy {
+        grid-template-columns: 1fr;
     }
 }
 
